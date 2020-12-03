@@ -1,0 +1,9 @@
+<h1>Edit User</h1>
+
+<form action="/user/:id" method="POST">
+    <p> <label for="username">Username:</label>
+        <input type="text" id="username" name="username" value="<%= @session.username %>" /></p>
+
+        <input type="hidden" name="_method" value="PATCH" />
+    <p> <input type="submit" value="Edit User" />
+</form>

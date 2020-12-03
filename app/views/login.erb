@@ -1,0 +1,14 @@
+<h1>Welcome!</h1>
+
+<form action="/" method="POST">
+    <p> <label for="username">Username:</label>
+        <input type="text" id="username" name="username" class="form-control" /></p>
+
+    <p> <label for="password">Password:</label>
+        <input type="password" id="password" name="password" class="form-control" /></p>
+    
+        <%= @error %>
+    <p> <input type="submit" value="Login" class="btn btn-primary btn-block" />
+</form>
+
+<a href="/new">Sign Up</a>
